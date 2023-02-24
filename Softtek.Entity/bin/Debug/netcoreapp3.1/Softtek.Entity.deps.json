@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Softtek.Entity/1.0.0": {
+        "dependencies": {
+          "Softtek.Servicios": "1.0.0"
+        },
+        "runtime": {
+          "Softtek.Entity.dll": {}
+        }
+      },
+      "Softtek.Servicios/1.0.0": {
+        "runtime": {
+          "Softtek.Servicios.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Softtek.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Softtek.Servicios/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

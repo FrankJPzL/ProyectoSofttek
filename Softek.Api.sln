@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33027.164
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softek.Api", "Softek.Api\Softek.Api.csproj", "{9EE64D31-DC09-45D1-8C77-C85AD9730E72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softtek.Api", "Softek.Api\Softtek.Api.csproj", "{9EE64D31-DC09-45D1-8C77-C85AD9730E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softtek.Entity", "Softtek.Entity\Softtek.Entity.csproj", "{79BFA913-A3CA-4D47-B5C6-21A10D1513FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Softtek.Servicios", "Sofftek.Servicios\Softtek.Servicios.csproj", "{BBC0C982-B807-4092-9042-D965CFCF3A6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{9EE64D31-DC09-45D1-8C77-C85AD9730E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EE64D31-DC09-45D1-8C77-C85AD9730E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EE64D31-DC09-45D1-8C77-C85AD9730E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79BFA913-A3CA-4D47-B5C6-21A10D1513FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79BFA913-A3CA-4D47-B5C6-21A10D1513FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79BFA913-A3CA-4D47-B5C6-21A10D1513FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79BFA913-A3CA-4D47-B5C6-21A10D1513FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC0C982-B807-4092-9042-D965CFCF3A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC0C982-B807-4092-9042-D965CFCF3A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC0C982-B807-4092-9042-D965CFCF3A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC0C982-B807-4092-9042-D965CFCF3A6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

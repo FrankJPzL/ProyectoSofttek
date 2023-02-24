@@ -1,0 +1,9 @@
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Sofftek.Servicios\bin\Debug\netcoreapp3.1\Softtek.Servicios.deps.json
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Sofftek.Servicios\bin\Debug\netcoreapp3.1\Softtek.Servicios.dll
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Sofftek.Servicios\bin\Debug\netcoreapp3.1\Softtek.Servicios.pdb
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Sofftek.Servicios\obj\Debug\netcoreapp3.1\Softtek.Servicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Sofftek.Servicios\obj\Debug\netcoreapp3.1\Softtek.Servicios.AssemblyInfoInputs.cache
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Sofftek.Servicios\obj\Debug\netcoreapp3.1\Softtek.Servicios.AssemblyInfo.cs
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Sofftek.Servicios\obj\Debug\netcoreapp3.1\Softtek.Servicios.csproj.CoreCompileInputs.cache
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Sofftek.Servicios\obj\Debug\netcoreapp3.1\Softtek.Servicios.dll
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Sofftek.Servicios\obj\Debug\netcoreapp3.1\Softtek.Servicios.pdb

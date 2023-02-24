@@ -1,0 +1,13 @@
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\bin\Debug\netcoreapp3.1\Softtek.Entity.deps.json
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\bin\Debug\netcoreapp3.1\Softtek.Entity.dll
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\bin\Debug\netcoreapp3.1\Softtek.Entity.pdb
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\bin\Debug\netcoreapp3.1\Softtek.Servicios.dll
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\bin\Debug\netcoreapp3.1\Softtek.Servicios.pdb
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\obj\Debug\netcoreapp3.1\Softtek.Entity.csproj.AssemblyReference.cache
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\obj\Debug\netcoreapp3.1\Softtek.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\obj\Debug\netcoreapp3.1\Softtek.Entity.AssemblyInfoInputs.cache
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\obj\Debug\netcoreapp3.1\Softtek.Entity.AssemblyInfo.cs
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\obj\Debug\netcoreapp3.1\Softtek.Entity.csproj.CoreCompileInputs.cache
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\obj\Debug\netcoreapp3.1\Softtek.Entity.csproj.CopyComplete
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\obj\Debug\netcoreapp3.1\Softtek.Entity.dll
+C:\FRANK\REPOSITORIOS\SOFTEK PRUEBA\Softek.Api\Softtek.Entity\obj\Debug\netcoreapp3.1\Softtek.Entity.pdb

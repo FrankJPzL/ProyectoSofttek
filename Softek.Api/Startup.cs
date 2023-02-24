@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace Softek.Api
 {
     public class Startup
@@ -19,12 +20,14 @@ namespace Softek.Api
         {
             Configuration = configuration;
         }
-
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllers();
         }
 
@@ -46,6 +49,32 @@ namespace Softek.Api
             {
                 endpoints.MapControllers();
             });
+
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
+
+            //app.UseSwagger();
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "api v1");
+
+            //});
+
+            //app.UseStaticFiles();
+            //app.UseHttpsRedirection();
+            //app.UseCors(MyAllowSpecificOrigins);
+            //app.UseRouting();
+            //app.UseAuthentication();
+            //app.UseAuthorization();
+
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllers();
+            //});
+
         }
     }
 }
