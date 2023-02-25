@@ -10,6 +10,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using System.Security.Claims;
+using Softtek.Entity.Aut;
 
 namespace Softek.Api.Controllers
 {
@@ -17,11 +18,17 @@ namespace Softek.Api.Controllers
     [ApiController]
     public class SeguridadController : Controller
     {
-        private readonly IConfiguration configuration;
+       // private readonly IConfiguration configuration;
+        private readonly E_TokenContext _context2;
 
-        public SeguridadController(IConfiguration configuration)
+        //public SeguridadController(IConfiguration configuration)
+        //{
+        //    this.configuration = configuration;
+        //}
+
+        public SeguridadController(E_TokenContext context2)
         {
-            this.configuration = configuration;
+            _context2 = context2;
         }
 
         [HttpPost]
@@ -33,24 +40,26 @@ namespace Softek.Api.Controllers
             {
                 return Ok(new
                 {
-                    codigo = "ERROR",
-                    resultado = "Usuario o contraseña Incorrectos.Cuenta fue bloqueada",
+                    codigo = 400,
+                    resultado = "El usuario no existe",
                     data = "NO_TOKEN"
                 });
             }
 
-            string lstr_token = GenerarTokenJWT(usuario);
-
-            return Ok(new { codigo = "200",
+            string lstr_token = GenerarTokenJWT(usuario);           
+            string generate = Generate(usuario.token, lstr_token);
+           
+            return Ok(new { codigo = 200,
                 resultado = "Usuario o contraseña Incorrectos.Cuenta fue bloqueada" ,
-                data = lstr_token
+                data = lstr_token,
+                idtoken = generate
             });
         }
         private string GenerarTokenJWT(E_Usuario usuario)
         {
             // CREAMOS EL HEADER //
             var _symmetricSecurityKey = new SymmetricSecurityKey(
-                    Encoding.UTF8.GetBytes(configuration["JWT:ClaveSecreta"])
+                    Encoding.UTF8.GetBytes("OLAh6Yh5KwNFvOqgltw7")
                 );
             var _signingCredentials = new SigningCredentials(
                     _symmetricSecurityKey, SecurityAlgorithms.HmacSha256
@@ -69,8 +78,8 @@ namespace Softek.Api.Controllers
 
             // CREAMOS EL PAYLOAD //
             var _Payload = new JwtPayload(
-                    issuer: configuration["JWT:Issuer"],
-                    audience: configuration["JWT:Audience"],
+                    issuer: "",
+                    audience: "",
                     claims: _Claims,
                     notBefore: DateTime.UtcNow,
                     // Exipra a la 24 horas. .AddHours(24) ahorita 12 horas
@@ -84,6 +93,27 @@ namespace Softek.Api.Controllers
                 );
 
             return new JwtSecurityTokenHandler().WriteToken(_Token);
+        }
+
+        private string Generate(E_Token model, string lstr_token)
+        {
+            try
+            {
+                model.UsuarioId = 1;
+                model.token = lstr_token;
+                model.generaciontoken = DateTime.Now;
+                model.expiraciontoken = DateTime.Now.AddHours(1);
+                model.estado = "1";
+
+                _context2.E_Tokens.Add(model);
+                _context2.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                
+            }
+           
+            return model.id.ToString();
         }
     }
 }

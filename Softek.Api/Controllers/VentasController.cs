@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Softtek.Entity.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,81 +10,28 @@ namespace Softek.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VentasController : Controller
+    public class VentasController : ControllerBase
     {
-        // GET: VentasController
-        public ActionResult Index()
+        private readonly E_VendedorrContext _context;
+
+        public VentasController(E_VendedorrContext context)
         {
-            return View();
+            _context = context; 
         }
 
-        // GET: VentasController/Details/5
-        public ActionResult Details(int id)
+        [HttpGet]
+        public List<E_Vendedorr> GetVendedor()
         {
-            return View();
+            return _context.E_Vendedores.ToList();
         }
-
-        // GET: VentasController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: VentasController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        [Route("AddVendedor")]
+        public ActionResult AddVendedor(E_Vendedorr model)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: VentasController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: VentasController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: VentasController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: VentasController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            model.fecharegistro = DateTime.Now;
+            _context.E_Vendedores.Add(model);
+            _context.SaveChanges();
+            return Created("api/Ventas/"+model.id, model);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Softtek.Entity.Aut;
+using System;
 
 namespace Softtek.Entity
 {
@@ -9,5 +10,6 @@ namespace Softtek.Entity
         public string ApellidosNombres { get; set; }
         public DateTime? FechaRegistro { get; set; }
         public string estado { get; set; }
+        public E_Token? token { get; set; }
     }
 }
