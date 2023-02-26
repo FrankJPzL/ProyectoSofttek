@@ -35,9 +35,7 @@ namespace Softek.Api
             services.AddDbContext<E_VendedorrContext>(options =>
             options.UseInMemoryDatabase("MyDb"));
             services.AddDbContext<E_TokenContext>(options2 =>
-           options2.UseInMemoryDatabase("MyDb"));
-            services.AddDbContext<E_AgenteComercialContext>(options3 =>
-           options3.UseInMemoryDatabase("MyDb"));
+           options2.UseInMemoryDatabase("MyDb"));            
             services.AddDbContext<E_VentasContext>(options4 =>
            options4.UseInMemoryDatabase("MyDb"));
 

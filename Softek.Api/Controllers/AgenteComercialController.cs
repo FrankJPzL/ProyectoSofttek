@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Softtek.Entity.Modelo;
+using Softtek.Api.Code;
 
 namespace Softtek.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Wrapper]
     public class AgenteComercialController : Controller
     {
         private readonly E_VentasContext _context;
@@ -35,7 +37,7 @@ namespace Softtek.Api.Controllers
             return Ok(new
             {
                 codigo = 200,
-                resultado = "Generado correctamente",
+                resultado = "Registrado correctamente",
                 data = "",
                 idtoken = ""
             });
