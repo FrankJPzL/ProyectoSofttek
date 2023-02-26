@@ -20,7 +20,7 @@ namespace Softek.Api.Controllers
     {
        // private readonly IConfiguration configuration;
         private readonly E_TokenContext _context2;
-
+        private readonly IConfiguration configuration;
         //public SeguridadController(IConfiguration configuration)
         //{
         //    this.configuration = configuration;
@@ -30,6 +30,10 @@ namespace Softek.Api.Controllers
         {
             _context2 = context2;
         }
+        //public SeguridadController(IConfiguration configuration)
+        //{
+        //    this.configuration = configuration;
+        //}
 
         [HttpPost]
         [Route("Login")]
