@@ -22,29 +22,20 @@ namespace Softtek.Api.Code
                 resultado = false;
             }
             else //verificando si el token enviado es válido o no
-            {
-                //ApiToken token;
-                //TokenDAO objTokenDAO = new TokenDAO();
-                //token = objTokenDAO.validarToken(tokenkey);
-
-                //var a2 = objTokenDAO.obtenerInformacionUsuarioExtranet(tokenkey);
-
-                //if (resultado != null )
+            {                
                 resultado = true;
             }
 
 
             if (resultado == false)
-            {
-                //context.Result = new BadRequestObjectResult(new { SecurityError = "Usuario no autenticado" });
+            {               
                 context.Result = new BadRequestObjectResult(new
                 {
                     codigo = -400,
                     resultado = "Token no activo",
                     data = "",
                     idtoken = ""
-                });
-                //context.Result = new OkResult(new {codigo = 0 });
+                });               
             }
 
             base.OnActionExecuting(context);
